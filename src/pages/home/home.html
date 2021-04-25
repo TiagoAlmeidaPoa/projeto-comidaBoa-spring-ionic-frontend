@@ -1,9 +1,9 @@
 <ion-content padding>
-  <h3>Comida Boa</h3>
+  <h3>Seja bem-vindo ao</h3>
 
-  <img src="assets/imgs/good-food.jpg" alt="logo">
+  <img src="assets/imgs/logo-inicial.jpg" alt="logo">
 
-  <button ion-button block>ANFITRIÃO</button>
-  <button ion-button block color="secondary">CONVIDADO</button>
+  <button ion-button block (click)="paginaAnfitriao()">ANFITRIÃO</button>
+  <button ion-button block color="secondary" (click)="paginaConvidado()">CONVIDADO</button>
 
 </ion-content>

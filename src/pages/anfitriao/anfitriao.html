@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Anfitriao</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="assets/imgs/anfitriao2.jpg" alt="logo">
+  <form>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fone</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button ion-button block>entre anfitrião</button>
+  </form>  
+  <button ion-button block outline color="secondary" (click)="paginaCadastroAnfitriao()">cadastre-se</button>
+</ion-content>
