@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ConvidadoPage page.
+ * Generated class for the CadastroConvidadoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,24 +10,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-convidado',
-  templateUrl: 'convidado.html',
+  selector: 'page-cadastro-convidado',
+  templateUrl: 'cadastro-convidado.html',
 })
-export class ConvidadoPage {
+export class CadastroConvidadoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ConvidadoPage');
+    console.log('ionViewDidLoad CadastroConvidadoPage');
   }
 
-  vaiParaTelaCadastroConvidado() {
-    this.navCtrl.setRoot("CadastroConvidadoPage");
-  }
-
-  vaiParaTelaRefeicao() {
-    this.navCtrl.setRoot('RefeicaoPage');
+  vaiParaTelaConvidado() {
+    this.navCtrl.setRoot("ConvidadoPage");
   }
 
 }
