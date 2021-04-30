@@ -5,14 +5,26 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-navbar>
-    <ion-title>CONVITES</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>convites</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<p>lista de lanches</p>
+
+  <ion-list>
+    <button ion-item *ngFor="let item of items">
+      <ion-thumbnail item-start>
+        <img src="../../assets/imgs/hamburguer.jpg">
+      </ion-thumbnail>
+      <h2>{{ item.nome }}</h2>
+      <h3>{{ item.endereco }}</h3>
+      <h3>R$ {{ item.valor }}</h3>
+      <p>{{ item.descricao }}</p>
+    </button>
+  </ion-list>
+
 </ion-content>

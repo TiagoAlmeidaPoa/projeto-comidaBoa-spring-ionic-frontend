@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RefeicaoDTO } from '../../models/refeicao.dto';
 import { RefeicaoService } from '../../services/domain/refeicao.service';
 
 /**
@@ -15,6 +16,8 @@ import { RefeicaoService } from '../../services/domain/refeicao.service';
   templateUrl: 'refeicao.html',
 })
 export class RefeicaoPage {
+  
+  items: RefeicaoDTO[];
 
   constructor(
     public navCtrl: NavController, 
@@ -25,11 +28,9 @@ export class RefeicaoPage {
   ionViewDidLoad() {
     this.refeicaoService.findAll()
         .subscribe(response => {
-          console.log(response);
+          this.items = response;
         },
-        error => {
-          console.log(error);
-        });    
+        error => {});    
   }
     
 }
