@@ -22,7 +22,7 @@ export class CadastroConvidadoPage {
     console.log('ionViewDidLoad CadastroConvidadoPage');
   }
 
-  vaiParaTelaConvidado() {
+  vaiParaTelaConvidado() {    
     this.navCtrl.setRoot("ConvidadoPage");
   }
 

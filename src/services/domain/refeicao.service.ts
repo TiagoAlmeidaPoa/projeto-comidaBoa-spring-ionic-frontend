@@ -12,6 +12,6 @@ export class RefeicaoService {
     }
 
     findAll() : Observable<RefeicaoDTO[]> {
-        return this.Http.get<RefeicaoDTO[]>(`${API_CONFIG.baseUrl}/refeicoess/todos`)
+        return this.Http.get<RefeicaoDTO[]>(`${API_CONFIG.baseUrl}/refeicoes/todos`)
     }
 }

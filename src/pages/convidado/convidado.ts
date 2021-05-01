@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CredenciaisConvidadoDTO } from '../../models/credenciais-convidado.dto';
 
 /**
  * Generated class for the ConvidadoPage page.
@@ -15,6 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ConvidadoPage {
 
+  credsConv : CredenciaisConvidadoDTO = {
+    nome: "",
+    telefone: ""
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -27,6 +33,7 @@ export class ConvidadoPage {
   }
 
   vaiParaTelaRefeicao() {
+    console.log(this.credsConv)
     this.navCtrl.setRoot('RefeicaoPage');
   }
 

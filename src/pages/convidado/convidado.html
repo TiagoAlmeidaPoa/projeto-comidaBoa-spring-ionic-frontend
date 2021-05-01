@@ -12,11 +12,11 @@
   <form>
     <ion-item>
       <ion-label>Nome</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="credsConv.nome" name="nome" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Fone</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="credsConv.telefone" name="telefone" type="text"></ion-input>
     </ion-item>
     <button ion-button block (click)="vaiParaTelaRefeicao()">entre convidado</button>
   </form>  

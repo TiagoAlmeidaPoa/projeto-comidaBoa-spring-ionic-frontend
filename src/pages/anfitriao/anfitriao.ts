@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CredenciaisAnfitriaoDTO } from '../../models/credenciais-anfitriao.dto';
 
 /**
  * Generated class for the AnfitriaoPage page.
@@ -15,6 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AnfitriaoPage {
 
+  credsAnf : CredenciaisAnfitriaoDTO = {
+    nome : "",
+    telefone : ""
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -24,6 +30,10 @@ export class AnfitriaoPage {
 
   paginaCadastroAnfitriao() {
     this.navCtrl.setRoot("CadastroAnfitriaoPage");
+  }
+
+  login() {
+    console.log(this.credsAnf);
   }
 
 }

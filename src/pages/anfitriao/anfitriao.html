@@ -12,13 +12,13 @@
   <form>
     <ion-item>
       <ion-label>Nome</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="credsAnf.nome" name="nome" type="text"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>Fone</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input [(ngModel)]="credsAnf.telefone" name="telefone" type="text"></ion-input>
     </ion-item>
-    <button ion-button block>entre anfitrião</button>
+    <button ion-button block (click)="login()">entre anfitrião</button>
   </form>  
   <button ion-button block outline color="secondary" (click)="paginaCadastroAnfitriao()">cadastre-se</button>
 </ion-content>
